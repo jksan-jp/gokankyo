@@ -3,11 +3,15 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "golang",
     "workspaceFolder": "/workspace",
-    "extensions": [
-        "golang.go"
-    ],
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
     },
     "forwardPorts": [8080, 3306],
     "postCreateCommand": "go mod tidy"
