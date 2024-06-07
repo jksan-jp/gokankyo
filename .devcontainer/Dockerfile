@@ -19,4 +19,4 @@ COPY src/ .
 EXPOSE 8080
 
 # Run the application
-CMD ["go", "run", "main.go"]
+# CMD ["go", "run", "main.go"]
