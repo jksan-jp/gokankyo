@@ -10,7 +10,6 @@ WORKDIR /workspace
 
 # Copy go.mod and run go mod tidy to generate go.sum
 COPY src/go.mod ./
-RUN go mod tidy
 
 # Copy the rest of the application source code
 COPY src/ .
