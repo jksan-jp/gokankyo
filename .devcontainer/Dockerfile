@@ -8,10 +8,6 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory
 WORKDIR /workspace
 
-# Copy the rest of the application source code
-COPY src/* ./
-RUN go mod download
-
 # Expose the application port
 EXPOSE 8080
 
